@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class test {
     // 八种基本数据类型
 
@@ -52,8 +54,22 @@ public class test {
     //byte < char = short < int < long < float < double
     //表示范围小的可以自动转换到表示范围较大的，而表示范围较大的需要强制转换到表示范围较小的数据
 
+    private void psvm() {
+        // 定义 Scanner 输入
+        Scanner sc = new Scanner(System.in);
+        int a;
+        float b;
+        boolean c;
+        // 规定 输入类型
+        a = sc.nextInt();
+        b = sc.nextFloat();
+        c = sc.nextBoolean();
+    }
+
     public static void main(String[] args) {
         System.out.println("Hello World");
+
+        byte test_byte = new Byte("0.01");
 
     }
 }
