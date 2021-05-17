@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class test {
@@ -69,14 +70,22 @@ public class test {
     public static void main(String[] args) {
         System.out.println("Hello World");
 
-        byte test_byte = new Byte("0.01");
+//        byte test_byte = new Byte("");
         for (int j = 0; j < 5; j++) {
             System.out.println(j);
         }
         int w = 1;
+        // do 在前无论什么情况都会先执行一次
         do {
             System.out.println(w);
             w++;
         } while (w <= 3);
+        // TODO: 这两个有啥区别
+        int[] arr = new int[3];
+        float arrf[] = new float[1];
+        arr[0] = 1;
+        arrf[0] = 1;
+        System.out.println(Arrays.toString(arrf));
+        System.out.println(Arrays.toString(arr));
     }
 }
