@@ -70,6 +70,13 @@ public class test {
         System.out.println("Hello World");
 
         byte test_byte = new Byte("0.01");
-
+        for (int j = 0; j < 5; j++) {
+            System.out.println(j);
+        }
+        int w = 1;
+        do {
+            System.out.println(w);
+            w++;
+        } while (w <= 3);
     }
 }
