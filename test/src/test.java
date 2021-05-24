@@ -82,10 +82,35 @@ public class test {
         } while (w <= 3);
         // TODO: 这两个有啥区别
         int[] arr = new int[3];
-        float arrf[] = new float[1];
+        float[] arrf = new float[1];
         arr[0] = 1;
         arrf[0] = 1;
         System.out.println(Arrays.toString(arrf));
         System.out.println(Arrays.toString(arr));
+        int[] aa = {1,2,3,4,5};
+        int[] aaa = new int[]{1,2,3,4,5};
+        System.out.println(Arrays.toString(aa));
+        // 二维数组
+        int[][] erweishuzu = new int[4][8];
+        int length = erweishuzu.length;
+
+        for (int[] i : erweishuzu){
+            System.out.println(Arrays.toString(i));
+        }
+
+        // 函数 三个部分组成，定义域，值域，对应法则，
+        // static 表示这是一个静态函数 static 定义的函数通过函数名调用同一个class下的函数,这个函数一定是static
+        String[] s = {"1","2","3"};
+        System.out.println(s);
+        // 单引号是char  双引号是string
+        char b[] = new char[]{'h','e','l'};
+
+
+
     }
+    public static int functionName(int param1, int param2){
+        int ans = param1 + param2;
+        return ans;
+    }
+    int a = 4;
 }
